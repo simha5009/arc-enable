@@ -71,6 +71,6 @@
     }
   },
   "runCommand": {
-    "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass -File JoinDomain.ps1', ' -domain ', parameters('Domain'), ' -userName ', parameters('UserName'), ' -Password ', parameters('Password'))]"
+    "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass -File arcEnable.ps1', ' -SUBSCRIPTION_ID ', parameters('SUBSCRIPTION_ID'), ' -RESOURCE_GROUP ', parameters('RESOURCE_GROUP'), ' -TENANT_ID ', parameters('TENANT_ID'), ' -LOCATION ', parameters('LOCATION'), ' -AUTH_TYPE ', parameters('AUTH_TYPE'), ' -CORRELATION_ID ', parameters('CORRELATION_ID'), ' -CLOUD ', parameters('CLOUD'), ' -ServicePrincipalId ', parameters('ServicePrincipalId'), ' -ServicePrincipalClientSecret ', parameters('ServicePrincipalClientSecret'))]"
   }  
 }
